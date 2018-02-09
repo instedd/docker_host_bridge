@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 # Inspired in https://github.com/cdosso/docker-port-forward
 
 TARGET_IP=$(ip route | awk '/default/ { print $3 }')
